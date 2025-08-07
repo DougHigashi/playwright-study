@@ -14,14 +14,22 @@ Para executar os testes, certifique-se de ter o Node.js instalado e, em seguida,
 
 ```
 npm install
-npx run test
+npm run test
 ```
 
 Os testes serão executados na página de login do site [https://www.saucedemo.com/v1/](https://www.saucedemo.com/v1/).
 
+Para ver os resultados da execução dos teste, execute:
+
+```
+npm run report
+```
+E acesse o [link](http://localhost:9323) que ficará disponível no seu localhost
+
 ### Casos de Teste Cobertos
 - **Login Bem-Sucedido**: Verifica se um usuário consegue fazer login com credenciais válidas.
 - **Login Sem Sucesso (Senha Incorreta)**: Verifica se uma mensagem de erro é exibida ao tentar fazer login com uma senha incorreta.
+- **Checkout com dois Itens com Sucesso**: Adiciona dois itens no carrinho, e prossegue até o checkout dos itens.
 
 ### Tecnologias Utilizadas
 - [Node.js](https://nodejs.org/)

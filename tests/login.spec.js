@@ -1,12 +1,11 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import { error } from 'console';
 
 test.describe('Login', async () => {
 
     // Access the URL before each test and assert robot image is present
     test.beforeEach(async ({ page }) => {
-        await page.goto('https://www.saucedemo.com/v1/')
+        await page.goto('/v1')
 
         const robotImage = page.locator('.bot_column')
 
